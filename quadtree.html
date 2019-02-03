@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Quadtree</title>
+        <style>
+            .container {
+                display: inline-block;
+                vertical-align: top;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>QuadTree Collision Detection</h1>
+        
+        <div class="container">
+            <canvas id="canvas" width="800" height="800" style="border:1px solid #000000;">
+            </canvas>
+        </div>
+
+        <div class="container">
+            <input id="checkbox_draw_grid" type="checkbox">Draw grid<br>
+            <p><b>FPS:</b></p>
+            <div id="FPS"></div> 
+            <p></p>
+            <p><b>Particles:</b></p>
+            <div id="particle_counter"></div> 
+            <p></p>
+            <p>Detection count with a quad tree: <div id="detection_counter"></div></p>
+            <p>Detection count using brute force: <div id="bruteforce_counter"></div></p>
+            <p></p>
+        </div>
+
+        <p><b>Instructions:</b></p>
+        <p>LEFT MOUSE BUTTON  - Add new particles.</p>
+        <script src="quadtree.js"></script> 
+    </body>
+</html> 
